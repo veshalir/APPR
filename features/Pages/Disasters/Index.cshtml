@@ -1,0 +1,33 @@
+﻿@page
+@model features.Pages.Disasters.IndexModel
+@{
+}
+
+<br />
+<h2>List of Disasters</h2>
+<a class="btn btn-primary btn-sm" href="/Disasters/Create">New Disaster</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>RequiredAid</th>
+            <th>StartDate</th>
+            <th>EndDate</th>
+            <th>LOCATION</th>
+            <th>DisasterDesc</th>
+        </tr>
+    </thead>
+    <tbody>
+         @foreach(var item in Model.listDisasters)
+        {
+            <tr>
+                <td>@item.requiredAid </td>
+                <td>@item.startDate </td>
+                <td>@item.endDate </td>
+                <td>@item.location </td>
+                <td>@item.disasterDesc </td>
+              
+            </tr>
+        }
+    </tbody>
+</table>
+

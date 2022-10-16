@@ -1,0 +1,26 @@
+﻿@page
+@model features.Pages.MonetaryDonations.IndexModel
+@{
+}
+<br />
+<h2>List of Money Donated</h2>
+<a class="btn btn-primary btn-sm" href="/MonetaryDonations/Create">New Donation</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>DonoDate</th>
+            <th>DonoAmount</th>
+        </tr>
+    </thead>
+     <tbody>
+         @foreach(var item in Model.listMonetarys)
+        {
+            <tr>
+                <td>@item.name </td>
+                <td>@item.donoDate </td>
+                <td>@item.donoAmount </td>
+            </tr>
+        }
+    </tbody>
+</table>
