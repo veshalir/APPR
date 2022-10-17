@@ -1,0 +1,100 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = features
+build_property.RootNamespace = features
+build_property.ProjectDir = C:\Users\lilxr\Desktop\features\features\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lilxr\Desktop\features\features
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Allocations/Delete1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsb2NhdGlvbnNcRGVsZXRlMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Allocations/Delete2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsb2NhdGlvbnNcRGVsZXRlMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Allocations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsb2NhdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Disasters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzYXN0ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Disasters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzYXN0ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Disasters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzYXN0ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/GoodsDonations/Allocate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNEb25hdGlvbnNcQWxsb2NhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/GoodsDonations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNEb25hdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/GoodsDonations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNEb25hdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/GoodsDonations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR29vZHNEb25hdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/MonetaryDonations/Allocate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uZXRhcnlEb25hdGlvbnNcQWxsb2NhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/MonetaryDonations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uZXRhcnlEb25hdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/MonetaryDonations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uZXRhcnlEb25hdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/MonetaryDonations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uZXRhcnlEb25hdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lilxr/Desktop/features/features/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qcjz2mi8e2
