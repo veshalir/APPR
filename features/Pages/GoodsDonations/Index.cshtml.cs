@@ -44,10 +44,10 @@ namespace features.Pages.GoodsDonations
 
     public class GoodsDonationsInfo
     {
-        public string name;
-        public string donoDesc;
-        public string donoDate;
-        public string noOfItems;
-        public string category;
+        public string? name;
+        public string? donoDesc;
+        public string? donoDate;
+        public string? noOfItems;
+        public string? category;
     }
 }

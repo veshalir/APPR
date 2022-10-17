@@ -1,9 +1,9 @@
 ﻿@page
-@model features.Pages.MonetaryDonations.AllocateModel
+@model features.Pages.GoodsDonations.AllocateModel
 @{
 }
 <br />
-<h2>Allocate Monetary Donation</h2>
+<h2>Allocate Good Donation</h2>
 
 @if (Model.errorMessage.Length>0)
 {
@@ -13,36 +13,50 @@
     </div>
 }
 <form method="POST">
-    <input typeof="hidden" name="name" value="@Model.monetaryDonationsInfo.name"/>
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Name</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="name" value="@Model.monetaryDonationsInfo.name" />
+            <input type="text" class="form-control" name="name" value="@Model.goodsDonationsInfo.name" />
         </div>
 
     </div>
      <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Donation Date</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="donoDate" value="@Model.monetaryDonationsInfo.donoDate" />
+            <input type="text" class="form-control" name="donoDate" value="@Model.goodsDonationsInfo.donoDate" />
         </div>
       
     </div>
      <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Donation Amount</label>
+        <label class="col-sm-3 col-form-label">Number of items</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="donoAmount" value="@Model.monetaryDonationsInfo.donoAmount" />
+            <input type="text" class="form-control" name="noOfItems" value="@Model.goodsDonationsInfo.noOfItems" />
+        </div>
+
+    </div>
+     <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Category</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="category" value="@Model.goodsDonationsInfo.category" />
+        </div>
+
+    </div>
+     <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Donation description</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="donoDesc" value="@Model.goodsDonationsInfo.donoDesc" />
         </div>
 
     </div>
 
-        <div class="row mb-3">
+      <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Allocate to:</label>
         <div class="col-sm-6">
             <select class="form-control" name="Disaster" asp-for="@Model.disasterPicked" asp-items="@Model.disasterOptions"> </select>
         </div>
 
     </div>
+
 
         @if (Model.successMessage.Length>0)
 {
