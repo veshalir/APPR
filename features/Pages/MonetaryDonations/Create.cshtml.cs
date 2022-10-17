@@ -27,17 +27,17 @@ namespace features.Pages.MonetaryDonations
 
             try
             {
-                String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=********;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                String connectionString = "Server=tcp:dafser.database.windows.net;Initial Catalog=AspNetUsers;Persist Security Info=False;User ID=dafad;Password=Sunshine123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                 using (SqlConnection connection = new SqlConnection(connectionString)) 
                 {
                     connection.Open();
-                    String sql = "INSERT INTO MONETARYDONO " + "(Name,DonoDate,DonoAmount) VALUES" + " (@name,@donoDate,@donoAmount);";
+                    String sql = "INSERT INTO MONETARYDONO(Name,DonoDate,DonoAmount) VALUES(@name,@donoDate,@donoAmount)";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        command.Parameters.AddWithValue("@name", monetaryDonationsInfo.name);
-                        command.Parameters.AddWithValue("@donoDate", monetaryDonationsInfo.donoDate);
-                        command.Parameters.AddWithValue("@donoAmount", monetaryDonationsInfo.donoAmount);
+                        command.Parameters.AddWithValue("@name",monetaryDonationsInfo.name);
+                        command.Parameters.AddWithValue("@donoDate",monetaryDonationsInfo.donoDate);
+                        command.Parameters.AddWithValue("@donoAmount",Int32.Parse(monetaryDonationsInfo.donoAmount));
                         command.ExecuteNonQuery();
                     }
                 }
@@ -45,7 +45,7 @@ namespace features.Pages.MonetaryDonations
             catch(Exception ex)
             {
                 errorMessage = ex.Message;
-                return ;
+                return;
 
             }
 

@@ -11,7 +11,7 @@ namespace features.Pages.GoodsDonations
         {
             try
             {
-                String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=********;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=Sunshine123!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
@@ -25,7 +25,7 @@ namespace features.Pages.GoodsDonations
                                 GoodsDonationsInfo goodsDonationsInfo = new GoodsDonationsInfo();
                                 goodsDonationsInfo.name = reader.GetString(0);
                                 goodsDonationsInfo.donoDate = reader.GetDateTime(1).ToString();
-                                goodsDonationsInfo.noOfItems = "" + reader.GetInt32(2);
+                                goodsDonationsInfo.noOfItems =  reader.GetInt32(2).ToString();
                                 goodsDonationsInfo.category =  reader.GetString(3);
                                 goodsDonationsInfo.donoDesc =  reader.GetString(4);
                                 listGoods.Add(goodsDonationsInfo);

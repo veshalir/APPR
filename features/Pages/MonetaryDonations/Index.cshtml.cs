@@ -11,7 +11,7 @@ namespace features.Pages.MonetaryDonations
         {
             try
             {
-                String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=********;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=Sunshine123!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 { 
                     connection.Open();
@@ -25,7 +25,7 @@ namespace features.Pages.MonetaryDonations
                                 MonetaryDonationsInfo monetaryDonationsInfo = new MonetaryDonationsInfo();
                                 monetaryDonationsInfo.name= reader.GetString(0);
                                 monetaryDonationsInfo.donoDate = reader.GetDateTime(1).ToString();
-                                monetaryDonationsInfo.donoAmount =""+ reader.GetString(2);
+                                monetaryDonationsInfo.donoAmount = "$" + reader.GetInt32(2);
                                 listMonetarys.Add(monetaryDonationsInfo);
 
                             }
@@ -41,8 +41,8 @@ namespace features.Pages.MonetaryDonations
     }
     public class MonetaryDonationsInfo
     {
-        public string name;
-        public string donoDate;
-        public string donoAmount;
+        public string? name;
+        public string? donoDate;
+        public string? donoAmount;
     }
 }
