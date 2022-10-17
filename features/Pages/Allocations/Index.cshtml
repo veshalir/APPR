@@ -2,3 +2,60 @@
 @model features.Pages.Allocations.IndexModel
 @{
 }
+<br />
+<h2>List of Goods Allocated</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>DonoDate</th>
+            <th>noOfItems</th>
+            <th>category</th>
+            <th>DonoDesc</th>
+            <th>AllocatedTo</th>
+        </tr>
+    </thead>
+     <tbody>
+        @foreach(var item in Model.listGoods)
+        {
+            <tr>
+                <td>@item.name </td>
+                <td>@item.donoDate </td>
+                <td>@item.noOfItems </td>
+                <td>@item.category </td>
+                <td>@item.donoDesc </td>
+                <td>@item.allocatedTo </td>
+                
+            </tr>
+        }
+       
+    </tbody>
+</table>
+<br />
+<h2>List of Money Donated</h2>
+<a class="btn btn-primary btn-sm" href="/MonetaryDonations/Create">New Donation</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>DonoDate</th>
+            <th>DonoAmount</th>
+            <th>AllocatedTo</th>
+        </tr>
+    </thead>
+     <tbody>
+         @foreach(var item in Model.listMonetarys)
+        {
+            <tr>
+                <td>@item.name </td>
+                <td>@item.donoDate </td>
+                <td>@item.donoAmount </td>
+                <td>@item.allocatedTo </td>
+                
+               
+            </tr>
+        }
+    </tbody>
+</table>
+
