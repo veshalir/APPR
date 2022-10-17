@@ -107,7 +107,7 @@ namespace features.Pages.MonetaryDonations
 
             }
 
-            monetaryDonationsInfo.name = monetaryDonationsInfo.donoDate = monetaryDonationsInfo.donoAmount=disasterPicked = "";
+            monetaryDonationsInfo.name = monetaryDonationsInfo.donoDate = monetaryDonationsInfo.donoAmount = "";
             successMessage = "Monetary amount allocates correctly";
 
             Response.Redirect("MonetaryDonations/Index");
