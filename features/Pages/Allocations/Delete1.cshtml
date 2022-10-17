@@ -1,0 +1,26 @@
+﻿@page
+@using System.Data.SqlClient;
+@{
+    String name=Request.Query["name"];
+    try
+    {
+        String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=Sunshine123!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+            String sql = "DELETE * FROM GoodsAllocations WHERE name=@name";
+
+
+
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("name", name);
+                command.ExecuteNonQuery();
+            }
+        }
+    }
+     catch (Exception ex)
+     {
+       Console.WriteLine("Exception: " + ex.ToString());
+     }
+}
