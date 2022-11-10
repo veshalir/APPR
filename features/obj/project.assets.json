@@ -458,11 +458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lilxr\\Desktop\\features\\features\\features.csproj",
+      "projectUniqueName": "C:\\Users\\lilxr\\Desktop\\appr_PART2_ST10115191\\features\\features\\features.csproj",
       "projectName": "features",
-      "projectPath": "C:\\Users\\lilxr\\Desktop\\features\\features\\features.csproj",
+      "projectPath": "C:\\Users\\lilxr\\Desktop\\appr_PART2_ST10115191\\features\\features\\features.csproj",
       "packagesPath": "C:\\Users\\lilxr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lilxr\\Desktop\\features\\features\\obj\\",
+      "outputPath": "C:\\Users\\lilxr\\Desktop\\appr_PART2_ST10115191\\features\\features\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
