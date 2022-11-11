@@ -30,11 +30,11 @@ namespace features.Pages.Disasters
 
             try
             {
-                String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=Sunshine123!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                String connectionString = "Server=tcp:dafser.database.windows.net;Initial Catalog=AspNetUsers;Persist Security Info=False;User ID=dafad;Password=Sunshine123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    String sql = "INSERT INTO Disasters " + "(REQUIREDAID,STARTDate,ENDDate,LOCATION,DISASTERDesc) VALUES" + " (@requiredAid,@startDate,@endDate,@location,@disasterDesc);";
+                    String sql = "INSERT INTO Disasters(REQUIREDAID,STARTDate,ENDDate,LOCATION,DISASTERDesc) VALUES(@requiredAid,@startDate,@endDate,@location,@disasterDesc)";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {

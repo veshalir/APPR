@@ -75,7 +75,7 @@ namespace features.Pages.MonetaryDonations
             monetaryDonationsInfo.name = Request.Form["name"];
             monetaryDonationsInfo.donoDate = Request.Form["DonoDate"];
             monetaryDonationsInfo.donoAmount = Request.Form["DonoAmount"];
-             
+            disasterPicked = Request.Form["Disaster"];
             if (disasterPicked.Length==0 || monetaryDonationsInfo.name.Length == 0 || monetaryDonationsInfo.donoDate.Length == 0 || monetaryDonationsInfo.donoAmount.Length == 0)
             {
                 errorMessage = "All Fields are required";
@@ -110,7 +110,7 @@ namespace features.Pages.MonetaryDonations
             monetaryDonationsInfo.name = monetaryDonationsInfo.donoDate = monetaryDonationsInfo.donoAmount = "";
             successMessage = "Monetary amount allocates correctly";
 
-            Response.Redirect("MonetaryDonations/Index");
+            Response.Redirect("/MonetaryDonations/Index");
         }
     }
 }

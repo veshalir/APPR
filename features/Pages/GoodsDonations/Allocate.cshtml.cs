@@ -17,7 +17,8 @@ namespace features.Pages.GoodsDonations
             String name=Request.Query["name"];
             try
             {
-                String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=Sunshine123!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                String connectionString = "Server=tcp:dafser.database.windows.net;Initial Catalog=AspNetUsers;Persist Security Info=False;User ID=dafad;Password=Sunshine123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
@@ -71,7 +72,7 @@ namespace features.Pages.GoodsDonations
             goodsDonationsInfo.noOfItems = Request.Form["noOfItems"];
             goodsDonationsInfo.category = Request.Form["category"];
             goodsDonationsInfo.donoDesc = Request.Form["donoDesc"];
-
+            disasterPicked= Request.Form["Disaster"];
 
             if (goodsDonationsInfo.name.Length == 0 || goodsDonationsInfo.donoDate.Length == 0 || goodsDonationsInfo.noOfItems.Length == 0 || goodsDonationsInfo.donoDesc.Length == 0 || goodsDonationsInfo.category.Length == 0)
             {
@@ -81,11 +82,11 @@ namespace features.Pages.GoodsDonations
 
             try
             {
-                String connectionString = "Data Source=dafser.database.windows.net;Initial Catalog=AspNetUsers;User ID=dafad;Password=Sunshine123!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                String connectionString = "Server=tcp:dafser.database.windows.net;Initial Catalog=AspNetUsers;Persist Security Info=False;User ID=dafad;Password=Sunshine123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    String sql = "INSERT INTO GoodsAllocations " + "(Name,DonoDate,noOfItems,category,DonoDesc,AllocatedTo) VALUES" + " (@name,@donoDate,@noOfItems,@category,@donoDesc,@disasterAllo);";
+                    String sql = "INSERT INTO GoodsALLOCATIONS(Name,DonoDate,noOfItems,category,DonoDesc,AllocatedTo) VALUES(@name,@donoDate,@noOfItems,@category,@donoDesc,@disasterAllo)";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
@@ -110,7 +111,7 @@ namespace features.Pages.GoodsDonations
             goodsDonationsInfo.name = goodsDonationsInfo.donoDate = goodsDonationsInfo.noOfItems = goodsDonationsInfo.donoDesc = goodsDonationsInfo.category = "";
             successMessage = "Goods added correctly";
 
-            Response.Redirect("GoodsDonations/Index");
+            Response.Redirect("/GoodsDonations/Index");
         }
     }
 }

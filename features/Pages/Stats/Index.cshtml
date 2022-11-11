@@ -1,0 +1,64 @@
+﻿@page
+@model features.Pages.Stats.IndexModel
+@{
+}
+<br />
+<p>Total monetary donations:@Model.monetaryCount</p>
+<p>Total number of goods received:@Model.goodsCount</p>
+<br />
+<h2>List of Goods Allocated to Acitve Disasters</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>DonoDate</th>
+            <th>noOfItems</th>
+            <th>category</th>
+            <th>DonoDesc</th>
+            <th>AllocatedTo</th>
+        </tr>
+    </thead>
+     <tbody>
+        @foreach(var item in Model.listGoods)
+        {
+            <tr>
+                <td>@item.name </td>
+                <td>@item.donoDate </td>
+                <td>@item.noOfItems </td>
+                <td>@item.category </td>
+                <td>@item.donoDesc </td>
+                <td>@item.allocatedTo </td>
+               
+            </tr>
+        }
+       
+    </tbody>
+</table>
+<br />
+<h2>List of Money Donated to Acitve Disasters</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>DonoDate</th>
+            <th>DonoAmount</th>
+            <th>AllocatedTo</th>
+        </tr>
+    </thead>
+     <tbody>
+         @foreach(var item in Model.listMonetarys)
+        {
+            <tr>
+                <td>@item.name </td>
+                <td>@item.donoDate </td>
+                <td>@item.donoAmount </td>
+                <td>@item.allocatedTo </td>
+                 
+               
+            </tr>
+        }
+    </tbody>
+</table>
+
