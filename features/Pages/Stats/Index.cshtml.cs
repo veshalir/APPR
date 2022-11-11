@@ -20,7 +20,7 @@ namespace features.Pages.Stats
                 {
                     connection.Open();
                     String sql = "SELECT * FROM GoodsAllocations";
-                    String sqlG = "SUM(noOfItems) FROM GoodsAllocations";
+                    String sqlG = "SUM(noOfItems) AS total FROM GoodsAllocations";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -66,7 +66,7 @@ namespace features.Pages.Stats
                     connection.Open();
                     String sql = "SELECT * FROM MONETARYALLOCATIONS";
 
-                    String sqlM = "SUM(DONOAMOUNT) FROM MONETARYALLOCATIONS";
+                    String sqlM = "SUM(DONOAMOUNT) AS total FROM MONETARYALLOCATIONS";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -90,7 +90,7 @@ namespace features.Pages.Stats
                         {
                             while (reader.Read())
                             {
-                               monetaryCount+= reader.GetInt32(0);
+                               monetaryCount= reader.GetInt32(0);
 
                             }
                         }
